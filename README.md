@@ -1,1 +1,1 @@
-# The PokéPathers
+# The PokéPath Blog
