@@ -1,0 +1,24 @@
+:root{--ink:#2b2118;--panel:#f3ecd0;--accent:#e8b23a;--red:#c2452f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Press Start 2P',monospace;font-size:11px;line-height:2;color:var(--ink);
+ --c1:#5a8f3e;--c2:#4f8236;background-color:var(--c1);background-image:var(--bgimg,none),
+ linear-gradient(45deg,var(--c2) 25%,transparent 25%,transparent 75%,var(--c2) 75%),
+ linear-gradient(45deg,var(--c2) 25%,transparent 25%,transparent 75%,var(--c2) 75%);
+ background-size:auto,32px 32px,32px 32px;background-position:0 0,0 0,16px 16px;image-rendering:pixelated}
+/* One class per page = one game route. Drop real route images in img/ and uncomment --bgimg */
+.route-grass{--c1:#5a8f3e;--c2:#4f8236 /*;--bgimg:url(img/route1.png)*/}
+.route-cave{--c1:#4a4458;--c2:#413b4e}
+.route-sea{--c1:#3b7fb8;--c2:#3472a8}
+.route-night{--c1:#1d2340;--c2:#181d37;color:#eee}
+main,nav,footer{max-width:760px;margin:0 auto;padding:0 12px}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding-top:16px}
+.btn,nav a{background:var(--accent);color:var(--ink);border:4px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:6px 12px;text-decoration:none;font:inherit;cursor:pointer}
+.btn:hover,nav a:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.box{background:var(--panel);border:4px solid var(--ink);box-shadow:5px 5px 0 var(--ink),inset 0 0 0 3px #fff8;padding:16px;margin:20px 0}
+h1{font-size:18px;line-height:1.6}h2{font-size:13px}small{font-size:10px;opacity:.7}
+.ico{font-size:20px;image-rendering:pixelated}img.ico{width:32px;height:32px;vertical-align:middle}
+.tag{background:var(--ink);color:var(--panel);padding:1px 6px;font-size:9px}
+.post+.post,.qa+.qa{border-top:4px dotted var(--ink);margin-top:14px;padding-top:14px}
+textarea,input{width:100%;font:inherit;padding:8px;border:4px solid var(--ink);background:#fff;margin:8px 0}
+footer{padding:20px 12px 40px;text-align:center;color:#fff}
+.egg{opacity:.15;text-decoration:none}.egg:hover{opacity:1}
